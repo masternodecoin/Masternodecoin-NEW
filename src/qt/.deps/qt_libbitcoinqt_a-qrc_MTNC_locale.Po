@@ -1,0 +1,1 @@
+qt/qt_libbitcoinqt_a-qrc_MTNC_locale.o: qt/qrc_MTNC_locale.cpp

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=MTNC
+Comment=MTNC P2P Cryptocurrency
+Exec=MTNC-qt %u
+Terminal=false
+Type=Application
+Icon=MTNC128
+MimeType=x-scheme-handler/MTNC;
+Categories=Office;Finance;
+Name[zh_CN]=MTNC-qt.desktop.desktop

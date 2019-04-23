@@ -1,0 +1,26 @@
+[Unit]
+Description=MTNC's distributed currency daemon
+After=network.target
+
+[Service]
+User=MTNC
+Group=MTNC
+
+Type=forking
+PIDFile=/var/lib/MTNCd/MTNCd.pid
+
+ExecStart=/usr/bin/MTNCd -daemon -pid=/var/lib/MTNCd/MTNCd.pid \
+          -conf=/etc/MTNC/MTNC.conf -datadir=/var/lib/MTNCd
+
+ExecStop=-/usr/bin/MTNC-cli -conf=/etc/MTNC/MTNC.conf \
+         -datadir=/var/lib/MTNCd stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target
