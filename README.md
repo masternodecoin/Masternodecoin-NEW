@@ -26,26 +26,37 @@ NeoScrypt
 ### Block Rewards
 
 ******** blockValue * 70 / 100;
+
     (nHeight <= 1000 && > 1) {
         nSubsidy = 250 * COIN;
+        
     (nHeight < 103680 && nHeight > 1000) {
         nSubsidy = 700 * COIN;
+        
     (nHeight < 207360 && nHeight >= 103680) {
         nSubsidy = 600 * COIN;
+        
     (nHeight < 311040 && nHeight >= 207360) {
         nSubsidy = 500 * COIN;
+        
     (nHeight < 414720 && nHeight >= 311040) {
         nSubsidy = 400 * COIN;
+        
     (nHeight < 518400 && nHeight >= 414720) {
         nSubsidy = 350 * COIN;
+        
     (nHeight < 622080 && nHeight >= 518400) {
         nSubsidy = 300 * COIN;
+        
     (nHeight < 725760 && nHeight >= 622080) {
         nSubsidy = 250 * COIN;
+        
     (nHeight < 829440 && nHeight >= 725760) {
         nSubsidy = 200 * COIN;
+        
     {nHeight >= 829440
         nSubsidy = 150 * COIN;
+        
     }
 
 
