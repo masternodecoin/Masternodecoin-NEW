@@ -95,8 +95,13 @@ for example
 Compile MERCANTE for Windows (64-bit)
 
 ./autogen.sh
+
 cd depends
+
 make HOST=x86_64-w64-mingw32 -j4
+
 cd ..
+
 ./configure --prefix=`pwd`/depends/x86_64-w64-mingw32 --enable-cxx --disable-shared --enable-static --with-pic
+
 make
